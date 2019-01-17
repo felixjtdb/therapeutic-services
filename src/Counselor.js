@@ -6,11 +6,11 @@ class Counselor extends Component {
   render() {
     return (
       <div className="Container">
-        <div className="Counselor_img">
-          <img src={require("./img/" + this.props.img_name + ".jpg")} />
+        <div className="Counselor_IMG_container" >
+          <img src={require("./img/" + this.props.img_name + ".jpg")} alt=""/>
           <h1 className="Counselor-header"> {this.props.name} </h1>
         </div>
-        <p> {this.props.introduction} </p>
+        {this.props.introduction}
       </div>
     );
   }

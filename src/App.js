@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Counselor name={"Felix"} img_name={"stock_image"} introduction={"I'm a wizard"}/>
+        <Counselor name={"Felix"} img_name={"stock_image"} introduction={"I'm a wizard"} img_width={608}/>
       </div>
     );
   }
