@@ -4,23 +4,18 @@
 
 .Counselor-header {
   background-color: #716E76;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .Container {
   border: 2px solid black;
-  margin: auto;
   padding: 20px;
   background-color: #290A5F;
-  width: 700px
+  width: 50%
 }
 
-.Counselor_IMG_container {
-    max-width: 100%;
-    height: auto;
-    text-align: center;
+.Image {
+  height : 50%;
+  width: 100%
 }
