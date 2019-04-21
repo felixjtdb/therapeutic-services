@@ -1,9 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
 .BannerContainer {
-  width: 100%;
-  height: 2%;
-  background-color: #797c7c;
+  background-color: #fa9200;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: calc(9px + 4vmin);
+  color: white;
 }
 
 .Logo {
-  position:
+  background-color: #4793ff;
+  border-radius: 10px;
+  font: 25px "Playfair Display";
+  padding: 10px;
+  width: 250px;
+  height: 50%;
+  align-items: center;
+  white-space: nowrap;
+  overflow-wrap: break-word;
 }
