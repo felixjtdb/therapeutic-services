@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import './css/App.css';
+import { render } from "react-dom"
+import { Router } from "@reach/router"
 
+import './css/App.css';
 
 import Counselor from './components/Counselor.js'
 import Banner from './components/Banner.js'
@@ -14,13 +16,22 @@ class App extends Component {
     return (
       <div className="App">
         <Banner/>
-        <div className = "body">
-          <Text text={paragraphs}/>
-          <Counselor name={"Felix"} img_name={"stock_image"} introduction={"I'm a wizard"}/>
-        </div>
+        <Router>
+          <Intro path="/" />
+          <Counselors path="councelors" />
+        </Router>
       </div>
     );
   }
 }
 
+const Intro = () => (
+  <Text text={paragraphs}/>
+);
+
+const Counselors = () => (
+  <Counselor name={"Felix"} img_name={"stock_image"} introduction={"I'm a wizard"}/>
+);
+
+render(<App />, document.getElementById("root"));
 export default App;
