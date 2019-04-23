@@ -10,7 +10,7 @@ import Text from './components/Text.js'
 
 import paragraphs from './assets/introText.js'
 
-class App extends Component {
+export default class App extends Component {
 
   render() {
     return (
@@ -34,4 +34,3 @@ const Counselors = () => (
 );
 
 render(<App />, document.getElementById("root"));
-export default App;

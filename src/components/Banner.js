@@ -9,8 +9,10 @@ class Banner extends Component {
     return (
       <div className="BannerContainer">
         <div className="Logo"> Therapeutic Services </div>
-        <Link to="/">Intro</Link>
-        <Link to="councelors">Councelors</Link>
+        <div className="NavigationContainer">
+          <Link className="Link" to="/">Intro</Link>
+          <Link className="Link"to="councelors">Councelors</Link>
+        </div>
       </div>
     );
   }
