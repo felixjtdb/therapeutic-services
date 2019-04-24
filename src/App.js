@@ -6,9 +6,9 @@ import './css/App.css';
 
 import Counselor from './components/Counselor.js'
 import Banner from './components/Banner.js'
-import Text from './components/Text.js'
+import Intro from './components/Intro.js'
 
-import paragraphs from './assets/introText.js'
+// import paragraphs from './assets/introText.js'
 
 export default class App extends Component {
 
@@ -18,19 +18,11 @@ export default class App extends Component {
         <Banner/>
         <Router>
           <Intro path="/" />
-          <Counselors path="councelors" />
+          <Counselor path="councelors" name={"Felix"} img_name={"stock_image"} introduction={"I'm a wizard"} />
         </Router>
       </div>
     );
   }
 }
-
-const Intro = () => (
-  <Text text={paragraphs}/>
-);
-
-const Counselors = () => (
-  <Counselor name={"Felix"} img_name={"stock_image"} introduction={"I'm a wizard"}/>
-);
 
 render(<App />, document.getElementById("root"));
