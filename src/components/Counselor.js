@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../css/Counselor.css'
 
-class Counselor extends Component {
+export default class Counselor extends Component {
 
   render() {
     return (
@@ -13,5 +13,3 @@ class Counselor extends Component {
     );
   }
 }
-
-export default Counselor;
