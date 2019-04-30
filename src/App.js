@@ -7,8 +7,7 @@ import './css/App.css';
 import Counselor from './components/Counselor.js'
 import Banner from './components/Banner.js'
 import Intro from './components/Intro.js'
-
-// import paragraphs from './assets/introText.js'
+import Location from './components/Location.js'
 
 export default class App extends Component {
 
@@ -16,10 +15,13 @@ export default class App extends Component {
     return (
       <div className="App">
         <Banner/>
-        <Router>
-          <Intro path="/" />
-          <Counselor path="councelors" name={"Felix"} img_name={"stock_image"} introduction={"I'm a wizard"} />
-        </Router>
+        <div className="inner">
+          <Router>
+            <Intro path="/" />
+            <Counselor path="councelors" name={"Felix"} img_name={"stock_image"} introduction={"I'm a wizard"} />
+            <Location path="location" />
+          </Router>
+        </div>
       </div>
     );
   }

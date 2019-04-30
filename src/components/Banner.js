@@ -12,6 +12,7 @@ class Banner extends Component {
         <div className="NavigationContainer">
           <Link className="Link" to="/">Intro</Link>
           <Link className="Link"to="councelors">Councelors</Link>
+          <Link className="Link" to="location">Location </Link>
         </div>
       </div>
     );
