@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from "@reach/router"
 
 import '../css/Banner.css'
+import Menu from './Menu'
 
 
 class Banner extends Component {
@@ -9,11 +9,7 @@ class Banner extends Component {
     return (
       <div className="BannerContainer">
         <div className="Logo"> Therapeutic Services </div>
-        <div className="NavigationContainer">
-          <Link className="Link" to="/">Intro</Link>
-          <Link className="Link"to="councelors">Councelors</Link>
-          <Link className="Link" to="location">Location </Link>
-        </div>
+        <Menu />
       </div>
     );
   }

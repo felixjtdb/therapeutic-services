@@ -6,6 +6,7 @@
   align-items: center;
   white-space: nowrap;
   height: 100%;
+  position: 'fixed';
 }
 
 .Logo {
