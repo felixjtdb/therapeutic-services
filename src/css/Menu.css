@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+
+.NavigationContainer {
+  z-index: 1000;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  height: 100%;
+}
+
+.MenuButton {
+  padding-left: 10px;
+  display: inline-block;
+  float: right;
+}
+
+.Link {
+  padding: 0.5vw;
+  font: 5vw "Cinzel";
+  text-decoration: none;
+  color: white;
+}
+.Link:hover {
+  background-color: #4793ff
+}

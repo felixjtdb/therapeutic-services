@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
-@import url('https://fonts.googleapis.com/css?family=Cinzel');
 
 .BannerContainer {
   background-color: #fa9200;
-  align-items: center;
+  text-align: center;
   white-space: nowrap;
   height: 100%;
   position: 'fixed';
@@ -13,22 +12,6 @@
   background-color: #4793ff;
   color: white;
   border-radius: 10px;
-  float: left;
-  font: 25px "Playfair Display";
-  padding: 10px;
-  width: 250px;
-}
-
-.NavigationContainer {
-  z-index: 1000;
-  margin-left: 300px;
-  white-space: nowrap;
-  overflow-wrap: break-word;
-  height: 100%;
-}
-
-.Link {
-  padding-right: 30px;
-  font: 30px "Cinzel";
-
+  font: 5vw "Playfair Display";
+  padding-right: 1vw;
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "@reach/router"
 
+import '../css/Menu.css'
 import menuImage from '../assets/img/Menu.png'
 
 export default class Menu extends Component {
@@ -12,7 +13,6 @@ export default class Menu extends Component {
     this.handleClick = this.handleClick.bind(this)
   }
 
-
   handleClick() {
     this.setState({
       visable: !this.state.visable
@@ -22,13 +22,13 @@ export default class Menu extends Component {
   render() {
     return (
       <div>
-        <img src={menuImage} alt={""} onClick={this.handleClick}/>
+      <img src={menuImage} alt={""} onClick={this.handleClick}/>
         { this.state.visable ?
-          <>
-            <Link className="Link" to="/">Intro</Link>
-            <Link className="Link" to="councelors">Councelors</Link>
+          <div className='NavigationContainer'>
+            <Link className="Link" to="/">Intro</Link>|
+            <Link className="Link" to="councelors">Councelors</Link>|
             <Link className="Link" to="location">Location </Link>
-          </>
+          </div>
           :
           null
         }
