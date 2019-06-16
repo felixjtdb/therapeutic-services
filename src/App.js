@@ -4,10 +4,12 @@ import { Router } from "@reach/router"
 
 import './css/App.css';
 
-import Counselor from './components/Counselor.js'
 import Banner from './components/Banner.js'
 import Intro from './components/Intro.js'
 import Location from './components/Location.js'
+import List from './components/List.js'
+import Definitions from './components/Definitions.js'
+
 
 export default class App extends Component {
 
@@ -18,7 +20,8 @@ export default class App extends Component {
         <div className="inner">
           <Router>
             <Intro path="/" />
-            <Counselor path="councelors" name={"Felix"} img_name={"stock_image"} introduction={"I'm a wizard"} />
+            <List path="councelors" />
+            <Definitions path="definitions" />
             <Location path="location" />
           </Router>
         </div>

@@ -27,7 +27,8 @@ export default class Menu extends Component {
           <div className='NavigationContainer'>
             <Link className="Link" to="/">Intro</Link>|
             <Link className="Link" to="councelors">Councelors</Link>|
-            <Link className="Link" to="location">Location </Link>
+            <Link className="Link" to="location">Location</Link>|
+            <Link className="Link" to="definitions">What is Therapy?</Link>
           </div>
           :
           null
