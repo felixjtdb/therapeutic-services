@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
 .App {
+  font-family: "Playfair Display";
 }
 
 .inner {

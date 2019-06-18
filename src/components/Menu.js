@@ -1,39 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from "@reach/router"
 
 import '../css/Menu.css'
-import menuImage from '../assets/img/Menu.png'
 
-export default class Menu extends Component {
-  constructor() {
-    super()
-    this.state = {
-      visable: false
-    }
-    this.handleClick = this.handleClick.bind(this)
-  }
-
-  handleClick() {
-    this.setState({
-      visable: !this.state.visable
-    });
-  }
-
-  render() {
+export default function Menu() {
     return (
-      <div>
-      <img src={menuImage} alt={""} onClick={this.handleClick}/>
-        { this.state.visable ?
-          <div className='NavigationContainer'>
-            <Link className="Link" to="/">Intro</Link>|
-            <Link className="Link" to="councelors">Councelors</Link>|
-            <Link className="Link" to="location">Location</Link>|
-            <Link className="Link" to="definitions">What is Therapy?</Link>
-          </div>
-          :
-          null
-        }
-      </div>
+        <div className='NavigationContainer'>
+          <Link className="Link" to="/">Home</Link>|
+          <Link className="Link" to="counsellors">counsellors</Link>|
+          <Link className="Link" to="location">Location</Link>|
+          <Link className="Link" to="definitions">What is Therapy?</Link>
+        </div>
     );
   }
-}
