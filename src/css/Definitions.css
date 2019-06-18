@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap');
 
-h1 
-
-h2 {
+h1 {
   font-family: 'Source Serif Pro', serif;
-  font-size:
+}
+
+h3 {
+  font-family: 'Source Serif Pro', serif;
 }
 
 p {
+  font-family: 'Source Serif Pro', serif;
+}
+
+li {
   font-family: 'Source Serif Pro', serif;
 }
