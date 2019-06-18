@@ -1,0 +1,39 @@
+.Counsellor-header {
+  background-color: #716E76;
+  font-size:  4vmin;
+  color: white;
+  overflow: hidden;
+  margin-left:
+}
+
+.Container {
+  border: 1px solid black;
+  width: 90%;
+  font-size: calc(2px + 2vmin);
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+.Image {
+  width: 15%;
+  height: auto%;
+  max-height: 40em;
+  float: left;
+  object-fit: fill;
+  margin: 1em;
+  border-color: #4793ff;
+  border-width: 2px;
+}
+
+.Contact {
+  float: right;
+  margin-right: 1em;
+}
+
+.Description {
+  margin: 1em
+}
+
+ ul {
+  overflow: hidden;
+ }
