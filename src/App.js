@@ -20,7 +20,7 @@ export default class App extends Component {
         <div className="inner">
           <Router>
             <Intro path="/" />
-            <List path="councelors" />
+            <List path="counsellors" />
             <Definitions path="definitions" />
             <Location path="location" />
           </Router>
