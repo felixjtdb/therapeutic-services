@@ -1,0 +1,25 @@
+.Introduction {
+  position: relative;
+  font-size: 4vmin;
+  display: flex;
+  align-items: center;
+}
+
+.FurtherIntro {
+  display: block;
+}
+
+.Quotes {
+  width: 50%;
+  text-align: center;
+  align-self: center;
+  margin: auto;
+}
+
+.Ravens {
+  vertical-align: middle;
+  width: 40%;
+  height: 25%;
+  position: relative;
+  padding: 10px
+}
